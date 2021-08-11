@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C422E57-72D6-4950-AB52-DCAC43C2AD0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Controle_Acessos_Umuarama</RootNamespace>
+    <AssemblyName>Controle-Acessos-Umuarama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acessos.Designer.cs">
+      <DependentUpon>Acessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cad-Residencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cad-Residencia.Designer.cs">
+      <DependentUpon>Cad-Residencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro-Motorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro-Motorista.Designer.cs">
+      <DependentUpon>Cadastro-Motorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAD_VEICULODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAD_VEICULODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros.Designer.cs">
+      <DependentUpon>Registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VEICDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VEICDataSet7.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acessos.resx">
+      <DependentUpon>Acessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cad-Residencia.resx">
+      <DependentUpon>Cad-Residencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro-Motorista.resx">
+      <DependentUpon>Cadastro-Motorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registros.resx">
+      <DependentUpon>Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CAD_VEICULODataSet.xsc">
+      <DependentUpon>CAD_VEICULODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CAD_VEICULODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAD_VEICULODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAD_VEICULODataSet.xss">
+      <DependentUpon>CAD_VEICULODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VEICDataSet1.xsc">
+      <DependentUpon>VEICDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet1.xss">
+      <DependentUpon>VEICDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet11.xsc">
+      <DependentUpon>VEICDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet11.xss">
+      <DependentUpon>VEICDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet2.xsc">
+      <DependentUpon>VEICDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet2.xss">
+      <DependentUpon>VEICDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet3.xsc">
+      <DependentUpon>VEICDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet3.xss">
+      <DependentUpon>VEICDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet4.xsc">
+      <DependentUpon>VEICDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet4.xss">
+      <DependentUpon>VEICDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet5.xsc">
+      <DependentUpon>VEICDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet5.xss">
+      <DependentUpon>VEICDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet6.xsc">
+      <DependentUpon>VEICDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet6.xss">
+      <DependentUpon>VEICDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet7.xsc">
+      <DependentUpon>VEICDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="VEICDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VEICDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VEICDataSet7.xss">
+      <DependentUpon>VEICDataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-physician-login-medicine-user-avatar-5ac45a4d44fe99.2456489015228176132826.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motorista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-Img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Casa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
