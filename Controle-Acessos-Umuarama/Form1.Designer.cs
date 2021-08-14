@@ -288,25 +288,28 @@ namespace Controle_Acessos_Umuarama
             // 
             // oPÇÕESToolStripMenuItem
             // 
+            this.oPÇÕESToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oPÇÕESToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.oPÇÕESToolStripMenuItem.Name = "oPÇÕESToolStripMenuItem";
-            this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
             this.oPÇÕESToolStripMenuItem.Text = "Cadastrar Motorista";
             this.oPÇÕESToolStripMenuItem.Click += new System.EventHandler(this.oPÇÕESToolStripMenuItem_Click);
             // 
             // cadastrarResidênciaToolStripMenuItem
             // 
+            this.cadastrarResidênciaToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrarResidênciaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cadastrarResidênciaToolStripMenuItem.Name = "cadastrarResidênciaToolStripMenuItem";
-            this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
+            this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.cadastrarResidênciaToolStripMenuItem.Text = "Cadastrar Residência";
             this.cadastrarResidênciaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarResidênciaToolStripMenuItem_Click);
             // 
             // registrarAcessoToolStripMenuItem
             // 
+            this.registrarAcessoToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registrarAcessoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.registrarAcessoToolStripMenuItem.Name = "registrarAcessoToolStripMenuItem";
-            this.registrarAcessoToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
+            this.registrarAcessoToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.registrarAcessoToolStripMenuItem.Text = "Registrar Acesso";
             this.registrarAcessoToolStripMenuItem.Click += new System.EventHandler(this.registrarAcessoToolStripMenuItem_Click);
             // 
