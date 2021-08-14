@@ -30,6 +30,9 @@ namespace Controle_Acessos_Umuarama
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,47 +73,53 @@ namespace Controle_Acessos_Umuarama
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(436, 47);
+            this.label1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(466, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Placa";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(447, 102);
+            this.label2.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(477, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(27, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cor";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(436, 76);
+            this.label3.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(460, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(49, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Modelo";
             // 
             // Txt_Placa
             // 
-            this.Txt_Placa.Location = new System.Drawing.Point(476, 47);
+            this.Txt_Placa.Location = new System.Drawing.Point(506, 47);
             this.Txt_Placa.Name = "Txt_Placa";
             this.Txt_Placa.Size = new System.Drawing.Size(127, 20);
             this.Txt_Placa.TabIndex = 3;
             // 
             // Txt_Modelo
             // 
-            this.Txt_Modelo.Location = new System.Drawing.Point(476, 73);
+            this.Txt_Modelo.Location = new System.Drawing.Point(506, 73);
             this.Txt_Modelo.Name = "Txt_Modelo";
             this.Txt_Modelo.Size = new System.Drawing.Size(127, 20);
             this.Txt_Modelo.TabIndex = 4;
             // 
             // Txt_Cor
             // 
-            this.Txt_Cor.Location = new System.Drawing.Point(476, 99);
+            this.Txt_Cor.Location = new System.Drawing.Point(506, 99);
             this.Txt_Cor.Name = "Txt_Cor";
             this.Txt_Cor.Size = new System.Drawing.Size(127, 20);
             this.Txt_Cor.TabIndex = 5;
@@ -127,7 +136,8 @@ namespace Controle_Acessos_Umuarama
             // 
             // Btn_NovoV
             // 
-            this.Btn_NovoV.Location = new System.Drawing.Point(434, 236);
+            this.Btn_NovoV.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_NovoV.Location = new System.Drawing.Point(448, 233);
             this.Btn_NovoV.Name = "Btn_NovoV";
             this.Btn_NovoV.Size = new System.Drawing.Size(75, 23);
             this.Btn_NovoV.TabIndex = 7;
@@ -137,7 +147,8 @@ namespace Controle_Acessos_Umuarama
             // 
             // Btn_EditarV
             // 
-            this.Btn_EditarV.Location = new System.Drawing.Point(515, 236);
+            this.Btn_EditarV.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_EditarV.Location = new System.Drawing.Point(529, 233);
             this.Btn_EditarV.Name = "Btn_EditarV";
             this.Btn_EditarV.Size = new System.Drawing.Size(75, 23);
             this.Btn_EditarV.TabIndex = 8;
@@ -147,7 +158,8 @@ namespace Controle_Acessos_Umuarama
             // 
             // Btn_ConsultV
             // 
-            this.Btn_ConsultV.Location = new System.Drawing.Point(677, 236);
+            this.Btn_ConsultV.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ConsultV.Location = new System.Drawing.Point(691, 233);
             this.Btn_ConsultV.Name = "Btn_ConsultV";
             this.Btn_ConsultV.Size = new System.Drawing.Size(75, 23);
             this.Btn_ConsultV.TabIndex = 9;
@@ -157,7 +169,8 @@ namespace Controle_Acessos_Umuarama
             // 
             // Btn_ExcluirV
             // 
-            this.Btn_ExcluirV.Location = new System.Drawing.Point(596, 236);
+            this.Btn_ExcluirV.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ExcluirV.Location = new System.Drawing.Point(610, 233);
             this.Btn_ExcluirV.Name = "Btn_ExcluirV";
             this.Btn_ExcluirV.Size = new System.Drawing.Size(75, 23);
             this.Btn_ExcluirV.TabIndex = 10;
@@ -171,8 +184,17 @@ namespace Controle_Acessos_Umuarama
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idVeiculoDataGridViewTextBoxColumn,
@@ -180,34 +202,42 @@ namespace Controle_Acessos_Umuarama
             this.modeloDataGridViewTextBoxColumn,
             this.corDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tabVBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(412, 229);
+            this.dataGridView1.Size = new System.Drawing.Size(430, 229);
             this.dataGridView1.TabIndex = 11;
             // 
             // idVeiculoDataGridViewTextBoxColumn
             // 
             this.idVeiculoDataGridViewTextBoxColumn.DataPropertyName = "Id_Veiculo";
-            this.idVeiculoDataGridViewTextBoxColumn.HeaderText = "Id_Veiculo";
+            this.idVeiculoDataGridViewTextBoxColumn.HeaderText = "ID";
             this.idVeiculoDataGridViewTextBoxColumn.Name = "idVeiculoDataGridViewTextBoxColumn";
             this.idVeiculoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // placaDataGridViewTextBoxColumn
             // 
             this.placaDataGridViewTextBoxColumn.DataPropertyName = "Placa";
-            this.placaDataGridViewTextBoxColumn.HeaderText = "Placa";
+            this.placaDataGridViewTextBoxColumn.HeaderText = "PLACA";
             this.placaDataGridViewTextBoxColumn.Name = "placaDataGridViewTextBoxColumn";
             // 
             // modeloDataGridViewTextBoxColumn
             // 
             this.modeloDataGridViewTextBoxColumn.DataPropertyName = "Modelo";
-            this.modeloDataGridViewTextBoxColumn.HeaderText = "Modelo";
+            this.modeloDataGridViewTextBoxColumn.HeaderText = "MODELO";
             this.modeloDataGridViewTextBoxColumn.Name = "modeloDataGridViewTextBoxColumn";
             // 
             // corDataGridViewTextBoxColumn
             // 
             this.corDataGridViewTextBoxColumn.DataPropertyName = "Cor";
-            this.corDataGridViewTextBoxColumn.HeaderText = "Cor";
+            this.corDataGridViewTextBoxColumn.HeaderText = "COR";
             this.corDataGridViewTextBoxColumn.Name = "corDataGridViewTextBoxColumn";
             // 
             // tabVBindingSource
@@ -226,22 +256,26 @@ namespace Controle_Acessos_Umuarama
             // 
             // Txt_Id
             // 
-            this.Txt_Id.Location = new System.Drawing.Point(758, 239);
+            this.Txt_Id.Location = new System.Drawing.Point(772, 236);
             this.Txt_Id.Name = "Txt_Id";
-            this.Txt_Id.Size = new System.Drawing.Size(42, 20);
+            this.Txt_Id.Size = new System.Drawing.Size(28, 20);
             this.Txt_Id.TabIndex = 12;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(769, 223);
+            this.label4.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(782, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 13);
+            this.label4.Size = new System.Drawing.Size(21, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "Id ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkRed;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oPÇÕESToolStripMenuItem,
             this.cadastrarResidênciaToolStripMenuItem,
@@ -254,6 +288,7 @@ namespace Controle_Acessos_Umuarama
             // 
             // oPÇÕESToolStripMenuItem
             // 
+            this.oPÇÕESToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.oPÇÕESToolStripMenuItem.Name = "oPÇÕESToolStripMenuItem";
             this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.oPÇÕESToolStripMenuItem.Text = "Cadastrar Motorista";
@@ -261,6 +296,7 @@ namespace Controle_Acessos_Umuarama
             // 
             // cadastrarResidênciaToolStripMenuItem
             // 
+            this.cadastrarResidênciaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cadastrarResidênciaToolStripMenuItem.Name = "cadastrarResidênciaToolStripMenuItem";
             this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
             this.cadastrarResidênciaToolStripMenuItem.Text = "Cadastrar Residência";
@@ -268,6 +304,7 @@ namespace Controle_Acessos_Umuarama
             // 
             // registrarAcessoToolStripMenuItem
             // 
+            this.registrarAcessoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.registrarAcessoToolStripMenuItem.Name = "registrarAcessoToolStripMenuItem";
             this.registrarAcessoToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
             this.registrarAcessoToolStripMenuItem.Text = "Registrar Acesso";
@@ -287,6 +324,7 @@ namespace Controle_Acessos_Umuarama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(819, 284);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -303,11 +341,14 @@ namespace Controle_Acessos_Umuarama
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CADASTRO VEICULO";
+            this.Text = "Cadastrar Veículo";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosVeiculoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cAD_VEICULODataSet)).EndInit();
@@ -341,10 +382,6 @@ namespace Controle_Acessos_Umuarama
         private VEICDataSet vEICDataSet;
         private System.Windows.Forms.BindingSource tabVBindingSource;
         private VEICDataSetTableAdapters.TabVTableAdapter tabVTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idVeiculoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn placaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn corDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox Txt_Id;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -352,6 +389,10 @@ namespace Controle_Acessos_Umuarama
         private System.Windows.Forms.ToolStripMenuItem cadastrarResidênciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarAcessoToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idVeiculoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn placaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn corDataGridViewTextBoxColumn;
     }
 }
 

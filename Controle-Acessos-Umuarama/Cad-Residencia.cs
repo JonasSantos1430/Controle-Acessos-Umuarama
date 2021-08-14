@@ -34,7 +34,7 @@ namespace Controle_Acessos_Umuarama
         }
 
         private void Cad_Residencia_Load(object sender, EventArgs e)
-        {
+        {   
             // TODO: esta linha de código carrega dados na tabela 'vEICDataSet3.TabResid'. Você pode movê-la ou removê-la conforme necessário.
             this.tabResidTableAdapter.Fill(this.vEICDataSet3.TabResid);
 
@@ -62,8 +62,6 @@ namespace Controle_Acessos_Umuarama
 
                 Txt_NomeResid.Text = "";
                 Txt_Num_Resid.Text = "";
-
-
 
 
             }
@@ -135,10 +133,10 @@ namespace Controle_Acessos_Umuarama
                 MessageBox.Show("Cadastro Alterado!");
                 this.tabResidTableAdapter.Fill(this.vEICDataSet3.TabResid);
 
-                Txt_ConsultResid.Text = "";
-                Txt_NomeResid.Text = "";
-                Txt_Num_Resid.Text = "";
-
+                Txt_ConsultResid.Clear();
+                Txt_NomeResid.Clear();
+                Txt_Num_Resid.Clear();
+                
               
             }
             catch (Exception ex)

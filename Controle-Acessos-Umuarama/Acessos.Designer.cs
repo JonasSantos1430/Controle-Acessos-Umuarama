@@ -31,11 +31,13 @@ namespace Controle_Acessos_Umuarama
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acessos));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.acessosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vEICDataSet7 = new Controle_Acessos_Umuarama.VEICDataSet7();
             this.acessosTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet7TableAdapters.AcessosTableAdapter();
-            this.idRegistroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.placaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.corDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,10 +53,20 @@ namespace Controle_Acessos_Umuarama
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idRegistroDataGridViewTextBoxColumn,
             this.placaDataGridViewTextBoxColumn,
             this.modeloDataGridViewTextBoxColumn,
             this.corDataGridViewTextBoxColumn,
@@ -64,10 +76,19 @@ namespace Controle_Acessos_Umuarama
             this.horárioDataGridViewTextBoxColumn,
             this.casaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.acessosBindingSource;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.GridColor = System.Drawing.Color.DarkRed;
+            this.dataGridView1.Location = new System.Drawing.Point(50, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 325);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(945, 399);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -85,73 +106,76 @@ namespace Controle_Acessos_Umuarama
             // 
             this.acessosTableAdapter.ClearBeforeFill = true;
             // 
-            // idRegistroDataGridViewTextBoxColumn
-            // 
-            this.idRegistroDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.idRegistroDataGridViewTextBoxColumn.DataPropertyName = "Id_Registro";
-            this.idRegistroDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idRegistroDataGridViewTextBoxColumn.Name = "idRegistroDataGridViewTextBoxColumn";
-            this.idRegistroDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // placaDataGridViewTextBoxColumn
             // 
             this.placaDataGridViewTextBoxColumn.DataPropertyName = "Placa";
-            this.placaDataGridViewTextBoxColumn.HeaderText = "Placa";
+            this.placaDataGridViewTextBoxColumn.HeaderText = "PLACA";
             this.placaDataGridViewTextBoxColumn.Name = "placaDataGridViewTextBoxColumn";
+            this.placaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // modeloDataGridViewTextBoxColumn
             // 
             this.modeloDataGridViewTextBoxColumn.DataPropertyName = "Modelo";
-            this.modeloDataGridViewTextBoxColumn.HeaderText = "Modelo";
+            this.modeloDataGridViewTextBoxColumn.HeaderText = "MODELO";
             this.modeloDataGridViewTextBoxColumn.Name = "modeloDataGridViewTextBoxColumn";
+            this.modeloDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // corDataGridViewTextBoxColumn
             // 
             this.corDataGridViewTextBoxColumn.DataPropertyName = "Cor";
-            this.corDataGridViewTextBoxColumn.HeaderText = "Cor";
+            this.corDataGridViewTextBoxColumn.HeaderText = "COR";
             this.corDataGridViewTextBoxColumn.Name = "corDataGridViewTextBoxColumn";
+            this.corDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // motoristaDataGridViewTextBoxColumn
             // 
             this.motoristaDataGridViewTextBoxColumn.DataPropertyName = "Motorista";
-            this.motoristaDataGridViewTextBoxColumn.HeaderText = "Motorista";
+            this.motoristaDataGridViewTextBoxColumn.HeaderText = "MOTORISTA";
             this.motoristaDataGridViewTextBoxColumn.Name = "motoristaDataGridViewTextBoxColumn";
+            this.motoristaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // rGDataGridViewTextBoxColumn
             // 
             this.rGDataGridViewTextBoxColumn.DataPropertyName = "RG";
             this.rGDataGridViewTextBoxColumn.HeaderText = "RG";
             this.rGDataGridViewTextBoxColumn.Name = "rGDataGridViewTextBoxColumn";
+            this.rGDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tipoRegistroDataGridViewTextBoxColumn
             // 
             this.tipoRegistroDataGridViewTextBoxColumn.DataPropertyName = "Tipo_Registro";
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Transparent;
-            this.tipoRegistroDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.tipoRegistroDataGridViewTextBoxColumn.HeaderText = "Tipo Registro";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
+            this.tipoRegistroDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.tipoRegistroDataGridViewTextBoxColumn.HeaderText = "TIPO REGISTRO";
             this.tipoRegistroDataGridViewTextBoxColumn.Name = "tipoRegistroDataGridViewTextBoxColumn";
+            this.tipoRegistroDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // horárioDataGridViewTextBoxColumn
             // 
             this.horárioDataGridViewTextBoxColumn.DataPropertyName = "Horário";
-            this.horárioDataGridViewTextBoxColumn.HeaderText = "Data e Horário";
+            this.horárioDataGridViewTextBoxColumn.HeaderText = "DATA E HORÁRIO";
             this.horárioDataGridViewTextBoxColumn.Name = "horárioDataGridViewTextBoxColumn";
+            this.horárioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.horárioDataGridViewTextBoxColumn.Width = 200;
             // 
             // casaDataGridViewTextBoxColumn
             // 
             this.casaDataGridViewTextBoxColumn.DataPropertyName = "Casa";
-            this.casaDataGridViewTextBoxColumn.HeaderText = "Casa";
+            this.casaDataGridViewTextBoxColumn.HeaderText = "RESIDÊNCIA";
             this.casaDataGridViewTextBoxColumn.Name = "casaDataGridViewTextBoxColumn";
+            this.casaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Acessos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1042, 450);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Acessos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Acessos";
+            this.Text = "Acessos Umuarama";
             this.Load += new System.EventHandler(this.Acessos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acessosBindingSource)).EndInit();
@@ -166,7 +190,6 @@ namespace Controle_Acessos_Umuarama
         private VEICDataSet7 vEICDataSet7;
         private System.Windows.Forms.BindingSource acessosBindingSource;
         private VEICDataSet7TableAdapters.AcessosTableAdapter acessosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idRegistroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn placaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn corDataGridViewTextBoxColumn;

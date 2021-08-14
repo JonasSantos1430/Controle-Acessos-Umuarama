@@ -24,18 +24,21 @@ namespace Controle_Acessos_Umuarama
                         Form Form1 = new Form1();
                         this.Hide();
                         Form1.ShowDialog();
-                      
-                 
+                     
             }
 
             else
             {
                 MessageBox.Show("Login ou Senhas invalidos!");
 
-
             }
 
             
+        }
+
+        private void btn_Fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

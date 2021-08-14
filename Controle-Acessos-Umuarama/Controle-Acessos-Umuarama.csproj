@@ -89,6 +89,12 @@
     <Compile Include="Registros.Designer.cs">
       <DependentUpon>Registros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tela_Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Load.Designer.cs">
+      <DependentUpon>Tela_Load.cs</DependentUpon>
+    </Compile>
     <Compile Include="VEICDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="Registros.resx">
       <DependentUpon>Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Load.resx">
+      <DependentUpon>Tela_Load.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="CAD_VEICULODataSet.xsc">
       <DependentUpon>CAD_VEICULODataSet.xsd</DependentUpon>
@@ -292,6 +301,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone-Umuarama-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-U.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-U-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

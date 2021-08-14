@@ -93,6 +93,16 @@ namespace Controle_Acessos_Umuarama.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icone_Umuarama_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Icone-Umuarama-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_login {
             get {
                 object obj = ResourceManager.GetObject("img-login", resourceCulture);
@@ -127,6 +137,26 @@ namespace Controle_Acessos_Umuarama.Properties {
         internal static System.Drawing.Bitmap Login_Img {
             get {
                 object obj = ResourceManager.GetObject("Login-Img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_U {
+            get {
+                object obj = ResourceManager.GetObject("Logo-U", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_U_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Logo-U-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

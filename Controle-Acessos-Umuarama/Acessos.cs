@@ -30,7 +30,7 @@ namespace Controle_Acessos_Umuarama
                 }
                 else
                 {
-                    item.DefaultCellStyle.BackColor = Color.PaleVioletRed;
+                    item.DefaultCellStyle.BackColor = Color.LightSlateGray;
                 }
 
 

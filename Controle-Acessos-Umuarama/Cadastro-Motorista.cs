@@ -52,8 +52,8 @@ namespace Controle_Acessos_Umuarama
                 this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
 
 
-                Txt_Motorista.Text = "";
-                Msk_Rg.Text = "";
+                Txt_Motorista.Clear();
+                Msk_Rg.Clear();
                
 
 
@@ -88,11 +88,13 @@ namespace Controle_Acessos_Umuarama
                 conexao.Open();
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Cadastro Alterado!");
+                
         
-                Txt_Motorista.Text = "";
-                Msk_Rg.Text = "";
+                Txt_Motorista.Clear();
+                Msk_Rg.Clear();
+                Txt_IdM.Clear();
 
-               this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
+                this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
 
 
 
@@ -175,6 +177,7 @@ namespace Controle_Acessos_Umuarama
             finally
             {
                 conexao.Close();
+                this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
 
             }
         }

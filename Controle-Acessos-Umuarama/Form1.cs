@@ -53,13 +53,23 @@ namespace Controle_Acessos_Umuarama
 
                 conexao.Open();
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Realizado!");
-                this.tabVTableAdapter.Fill(this.vEICDataSet.TabV);
-                Txt_Placa.Text = "";
-                Txt_Modelo.Text = "";
-                Txt_Cor.Text = "";
-                
+                 
+                if (Txt_Placa.Text == string.Empty)
+                {
+                    MessageBox.Show("campo Placa vazio!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Txt_Placa.BackColor = Color.Gray;
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Cadastro Realizado!");
+                    this.tabVTableAdapter.Fill(this.vEICDataSet.TabV);
 
+                    Txt_Placa.Clear();
+                    Txt_Modelo.Clear();
+                    Txt_Cor.Clear();
+
+                }
 
             }
             catch (Exception ex)
@@ -84,7 +94,7 @@ namespace Controle_Acessos_Umuarama
                 strSQL = "SELECT * FROM TabV WHERE Id_Veiculo=@Id_Veiculo";
                 comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Id_Veiculo", Txt_Id.Text);
+                comando.Parameters.AddWithValue("Id_Veiculo",Txt_Id.Text);
 
 
                 conexao.Open();
@@ -95,10 +105,10 @@ namespace Controle_Acessos_Umuarama
                     Txt_Placa.Text = Convert.ToString(dr["Placa"]);
                     Txt_Modelo.Text = Convert.ToString(dr["Modelo"]);
                     Txt_Cor.Text = Convert.ToString(dr["Cor"]);
-
+                   
                 }
 
-
+               
             }
             catch (Exception ex)
             {
@@ -108,6 +118,7 @@ namespace Controle_Acessos_Umuarama
             finally
             {
                 conexao.Close();
+                
 
             }
 
@@ -123,18 +134,18 @@ namespace Controle_Acessos_Umuarama
                 strSQL = "UPDATE TabV SET Placa=@Placa,Modelo=@Modelo,Cor=@Cor WHERE Id_Veiculo=@Id_Veiculo";
                 comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Id_Veiculo", Txt_Id.Text);
-                comando.Parameters.AddWithValue("Placa", Txt_Placa.Text);
-                comando.Parameters.AddWithValue("Modelo", Txt_Modelo.Text);
-                comando.Parameters.AddWithValue("Cor", Txt_Cor.Text);
+                comando.Parameters.AddWithValue("Id_Veiculo",Txt_Id.Text);
+                comando.Parameters.AddWithValue("Placa",Txt_Placa.Text);
+                comando.Parameters.AddWithValue("Modelo",Txt_Modelo.Text);
+                comando.Parameters.AddWithValue("Cor",Txt_Cor.Text);
 
                 conexao.Open();
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Cadastro Alterado!");
-                Txt_Id.Text = "";
-                Txt_Placa.Text = "";
-                Txt_Modelo.Text = "";
-                Txt_Cor.Text = "";
+                Txt_Id.Clear();
+                Txt_Placa.Clear();
+                Txt_Modelo.Clear();
+                Txt_Cor.Clear();
                 this.tabVTableAdapter.Fill(this.vEICDataSet.TabV);
 
 
@@ -158,20 +169,21 @@ namespace Controle_Acessos_Umuarama
             {
                 conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                strSQL = "DELETE FROM TabM WHERE Id_Motorista=@Id_Motorista";
+                strSQL = "DELETE FROM TabV WHERE Id_Veiculo=@Id_Veiculo";
                 comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Id_Motorista", Txt_Id.Text);
+                comando.Parameters.AddWithValue("Id_Veiculo",Txt_Id.Text);
 
                 conexao.Open();
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Cadastro Excluido!");
+                
                 this.tabVTableAdapter.Fill(this.vEICDataSet.TabV);
 
-                Txt_Id.Text = "";
-                Txt_Placa.Text = "";
-                Txt_Modelo.Text = "";
-                Txt_Cor.Text = "";
+                Txt_Id.Clear();
+                Txt_Placa.Clear();
+                Txt_Modelo.Clear();
+                Txt_Cor.Clear();
                 
             }
             catch (Exception ex)
