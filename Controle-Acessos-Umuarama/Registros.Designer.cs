@@ -229,7 +229,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_Fechar.Name = "Btn_Fechar";
             this.Btn_Fechar.Size = new System.Drawing.Size(90, 35);
             this.Btn_Fechar.TabIndex = 21;
-            this.Btn_Fechar.Text = "FECHAR";
+            this.Btn_Fechar.Text = "SAIR";
             this.Btn_Fechar.UseVisualStyleBackColor = true;
             this.Btn_Fechar.Click += new System.EventHandler(this.Btn_Fechar_Click);
             // 

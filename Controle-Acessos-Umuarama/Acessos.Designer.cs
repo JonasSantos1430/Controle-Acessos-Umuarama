@@ -35,9 +35,6 @@ namespace Controle_Acessos_Umuarama
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acessos));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.acessosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vEICDataSet7 = new Controle_Acessos_Umuarama.VEICDataSet7();
-            this.acessosTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet7TableAdapters.AcessosTableAdapter();
             this.placaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.corDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +43,9 @@ namespace Controle_Acessos_Umuarama
             this.tipoRegistroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horárioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.casaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.acessosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vEICDataSet7 = new Controle_Acessos_Umuarama.VEICDataSet7();
+            this.acessosTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet7TableAdapters.AcessosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acessosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet7)).BeginInit();
@@ -91,20 +91,6 @@ namespace Controle_Acessos_Umuarama
             this.dataGridView1.Size = new System.Drawing.Size(945, 399);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // acessosBindingSource
-            // 
-            this.acessosBindingSource.DataMember = "Acessos";
-            this.acessosBindingSource.DataSource = this.vEICDataSet7;
-            // 
-            // vEICDataSet7
-            // 
-            this.vEICDataSet7.DataSetName = "VEICDataSet7";
-            this.vEICDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // acessosTableAdapter
-            // 
-            this.acessosTableAdapter.ClearBeforeFill = true;
             // 
             // placaDataGridViewTextBoxColumn
             // 
@@ -165,6 +151,20 @@ namespace Controle_Acessos_Umuarama
             this.casaDataGridViewTextBoxColumn.Name = "casaDataGridViewTextBoxColumn";
             this.casaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // acessosBindingSource
+            // 
+            this.acessosBindingSource.DataMember = "Acessos";
+            this.acessosBindingSource.DataSource = this.vEICDataSet7;
+            // 
+            // vEICDataSet7
+            // 
+            this.vEICDataSet7.DataSetName = "VEICDataSet7";
+            this.vEICDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // acessosTableAdapter
+            // 
+            this.acessosTableAdapter.ClearBeforeFill = true;
+            // 
             // Acessos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +173,7 @@ namespace Controle_Acessos_Umuarama
             this.ClientSize = new System.Drawing.Size(1042, 450);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Acessos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acessos Umuarama";

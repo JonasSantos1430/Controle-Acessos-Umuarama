@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VEICDataSet11" targetNamespace="http://tempuri.org/VEICDataSet111.xsd" xmlns:mstns="http://tempuri.org/VEICDataSet111.xsd" xmlns="http://tempuri.org/VEICDataSet111.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VEICConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VEICConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Controle_Acessos_Umuarama.Properties.Settings.GlobalReference.Default.VEICConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TabVTableAdapter" GeneratorDataComponentClassName="TabVTableAdapter" Name="TabV" UserDataComponentName="TabVTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VEICConnectionString (Settings)" DbObjectName="VEIC.dbo.TabV" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Modelo FROM dbo.TabV</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Modelo" DataSetColumn="Modelo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VEICDataSet11" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VEICDataSet11" msprop:Generator_UserDSName="VEICDataSet11">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TabV" msprop:Generator_TableClassName="TabVDataTable" msprop:Generator_TableVarName="tableTabV" msprop:Generator_TablePropName="TabV" msprop:Generator_RowDeletingName="TabVRowDeleting" msprop:Generator_RowChangingName="TabVRowChanging" msprop:Generator_RowEvHandlerName="TabVRowChangeEventHandler" msprop:Generator_RowDeletedName="TabVRowDeleted" msprop:Generator_UserTableName="TabV" msprop:Generator_RowChangedName="TabVRowChanged" msprop:Generator_RowEvArgName="TabVRowChangeEvent" msprop:Generator_RowClassName="TabVRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Modelo" msprop:Generator_ColumnVarNameInTable="columnModelo" msprop:Generator_ColumnPropNameInRow="Modelo" msprop:Generator_ColumnPropNameInTable="ModeloColumn" msprop:Generator_UserColumnName="Modelo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

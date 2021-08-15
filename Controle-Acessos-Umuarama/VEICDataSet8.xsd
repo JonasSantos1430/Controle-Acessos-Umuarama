@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VEICDataSet8" targetNamespace="http://tempuri.org/VEICDataSet8.xsd" xmlns:mstns="http://tempuri.org/VEICDataSet8.xsd" xmlns="http://tempuri.org/VEICDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VEICConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VEICConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Controle_Acessos_Umuarama.Properties.Settings.GlobalReference.Default.VEICConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AcessosTableAdapter" GeneratorDataComponentClassName="AcessosTableAdapter" Name="Acessos" UserDataComponentName="AcessosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VEICConnectionString (Settings)" DbObjectName="VEIC.dbo.Acessos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Tipo_Registro FROM dbo.Acessos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tipo_Registro" DataSetColumn="Tipo_Registro" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VEICDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VEICDataSet8" msprop:Generator_UserDSName="VEICDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Acessos" msprop:Generator_TableClassName="AcessosDataTable" msprop:Generator_TableVarName="tableAcessos" msprop:Generator_TablePropName="Acessos" msprop:Generator_RowDeletingName="AcessosRowDeleting" msprop:Generator_RowChangingName="AcessosRowChanging" msprop:Generator_RowEvHandlerName="AcessosRowChangeEventHandler" msprop:Generator_RowDeletedName="AcessosRowDeleted" msprop:Generator_UserTableName="Acessos" msprop:Generator_RowChangedName="AcessosRowChanged" msprop:Generator_RowEvArgName="AcessosRowChangeEvent" msprop:Generator_RowClassName="AcessosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tipo_Registro" msprop:Generator_ColumnVarNameInTable="columnTipo_Registro" msprop:Generator_ColumnPropNameInRow="Tipo_Registro" msprop:Generator_ColumnPropNameInTable="Tipo_RegistroColumn" msprop:Generator_UserColumnName="Tipo_Registro">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

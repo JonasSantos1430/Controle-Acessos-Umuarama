@@ -101,8 +101,11 @@ namespace Controle_Acessos_Umuarama
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form Acessos = new Acessos();
-            Acessos.ShowDialog();
+            //Form Acessos = new Acessos();
+           // Acessos.ShowDialog();
+            Form Relatorio = new Relatorio();
+            Relatorio.ShowDialog();
+
         }
 
         private void Horas_Tick(object sender, EventArgs e)

@@ -35,6 +35,9 @@ namespace Controle_Acessos_Umuarama
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Motorista));
             this.Dgv_Motorista = new System.Windows.Forms.DataGridView();
+            this.idMotoristaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vEICDataSet2 = new Controle_Acessos_Umuarama.VEICDataSet2();
             this.Txt_Motorista = new System.Windows.Forms.TextBox();
@@ -51,9 +54,6 @@ namespace Controle_Acessos_Umuarama
             this.tabMTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet2TableAdapters.TabMTableAdapter();
             this.Msk_Rg = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.idMotoristaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Motorista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet2)).BeginInit();
@@ -102,6 +102,26 @@ namespace Controle_Acessos_Umuarama
             this.Dgv_Motorista.Size = new System.Drawing.Size(401, 263);
             this.Dgv_Motorista.TabIndex = 0;
             // 
+            // idMotoristaDataGridViewTextBoxColumn
+            // 
+            this.idMotoristaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idMotoristaDataGridViewTextBoxColumn.DataPropertyName = "Id_Motorista";
+            this.idMotoristaDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idMotoristaDataGridViewTextBoxColumn.Name = "idMotoristaDataGridViewTextBoxColumn";
+            this.idMotoristaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "NOME ";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // rgDataGridViewTextBoxColumn
+            // 
+            this.rgDataGridViewTextBoxColumn.DataPropertyName = "Rg";
+            this.rgDataGridViewTextBoxColumn.HeaderText = "RG";
+            this.rgDataGridViewTextBoxColumn.Name = "rgDataGridViewTextBoxColumn";
+            // 
             // tabMBindingSource
             // 
             this.tabMBindingSource.DataMember = "TabM";
@@ -115,7 +135,7 @@ namespace Controle_Acessos_Umuarama
             // Txt_Motorista
             // 
             this.Txt_Motorista.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Txt_Motorista.Location = new System.Drawing.Point(509, 63);
+            this.Txt_Motorista.Location = new System.Drawing.Point(527, 25);
             this.Txt_Motorista.Name = "Txt_Motorista";
             this.Txt_Motorista.Size = new System.Drawing.Size(129, 20);
             this.Txt_Motorista.TabIndex = 1;
@@ -125,7 +145,7 @@ namespace Controle_Acessos_Umuarama
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(416, 66);
+            this.label1.Location = new System.Drawing.Point(434, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 3;
@@ -136,7 +156,7 @@ namespace Controle_Acessos_Umuarama
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(481, 102);
+            this.label2.Location = new System.Drawing.Point(499, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(22, 17);
             this.label2.TabIndex = 4;
@@ -220,7 +240,7 @@ namespace Controle_Acessos_Umuarama
             // 
             // Msk_Rg
             // 
-            this.Msk_Rg.Location = new System.Drawing.Point(509, 99);
+            this.Msk_Rg.Location = new System.Drawing.Point(527, 61);
             this.Msk_Rg.Mask = "00,000,000-00";
             this.Msk_Rg.Name = "Msk_Rg";
             this.Msk_Rg.Size = new System.Drawing.Size(110, 20);
@@ -229,32 +249,12 @@ namespace Controle_Acessos_Umuarama
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Controle_Acessos_Umuarama.Properties.Resources.Motorista;
-            this.pictureBox1.Location = new System.Drawing.Point(644, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(520, 103);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(117, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
-            // 
-            // idMotoristaDataGridViewTextBoxColumn
-            // 
-            this.idMotoristaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.idMotoristaDataGridViewTextBoxColumn.DataPropertyName = "Id_Motorista";
-            this.idMotoristaDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idMotoristaDataGridViewTextBoxColumn.Name = "idMotoristaDataGridViewTextBoxColumn";
-            this.idMotoristaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "NOME ";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            // 
-            // rgDataGridViewTextBoxColumn
-            // 
-            this.rgDataGridViewTextBoxColumn.DataPropertyName = "Rg";
-            this.rgDataGridViewTextBoxColumn.HeaderText = "RG";
-            this.rgDataGridViewTextBoxColumn.Name = "rgDataGridViewTextBoxColumn";
             // 
             // Cadastro_Motorista
             // 

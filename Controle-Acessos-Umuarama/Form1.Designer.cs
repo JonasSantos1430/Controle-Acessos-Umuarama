@@ -75,7 +75,7 @@ namespace Controle_Acessos_Umuarama
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(466, 47);
+            this.label1.Location = new System.Drawing.Point(489, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 0;
@@ -86,7 +86,7 @@ namespace Controle_Acessos_Umuarama
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(477, 102);
+            this.label2.Location = new System.Drawing.Point(500, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 17);
             this.label2.TabIndex = 1;
@@ -97,7 +97,7 @@ namespace Controle_Acessos_Umuarama
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(460, 76);
+            this.label3.Location = new System.Drawing.Point(483, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 17);
             this.label3.TabIndex = 2;
@@ -105,21 +105,21 @@ namespace Controle_Acessos_Umuarama
             // 
             // Txt_Placa
             // 
-            this.Txt_Placa.Location = new System.Drawing.Point(506, 47);
+            this.Txt_Placa.Location = new System.Drawing.Point(529, 26);
             this.Txt_Placa.Name = "Txt_Placa";
             this.Txt_Placa.Size = new System.Drawing.Size(127, 20);
             this.Txt_Placa.TabIndex = 3;
             // 
             // Txt_Modelo
             // 
-            this.Txt_Modelo.Location = new System.Drawing.Point(506, 73);
+            this.Txt_Modelo.Location = new System.Drawing.Point(529, 52);
             this.Txt_Modelo.Name = "Txt_Modelo";
             this.Txt_Modelo.Size = new System.Drawing.Size(127, 20);
             this.Txt_Modelo.TabIndex = 4;
             // 
             // Txt_Cor
             // 
-            this.Txt_Cor.Location = new System.Drawing.Point(506, 99);
+            this.Txt_Cor.Location = new System.Drawing.Point(529, 78);
             this.Txt_Cor.Name = "Txt_Cor";
             this.Txt_Cor.Size = new System.Drawing.Size(127, 20);
             this.Txt_Cor.TabIndex = 5;
@@ -316,9 +316,9 @@ namespace Controle_Acessos_Umuarama
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Controle_Acessos_Umuarama.Properties.Resources.download_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(639, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(529, 104);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
