@@ -230,14 +230,12 @@ namespace Controle_Acessos_Umuarama
         private void oPÇÕESToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form Cadastro_Motorista = new Cadastro_Motorista();
-
             Cadastro_Motorista.ShowDialog();
         }
 
         private void cadastrarResidênciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form Cad_Residencia = new Cad_Residencia();
-
             Cad_Residencia.ShowDialog();
         }
 

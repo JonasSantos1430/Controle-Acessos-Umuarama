@@ -34,6 +34,9 @@ namespace Controle_Acessos_Umuarama
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Residencia));
             this.Dgv_Resid = new System.Windows.Forms.DataGridView();
+            this.idResidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeResidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numerResiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabResidBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vEICDataSet3 = new Controle_Acessos_Umuarama.VEICDataSet3();
             this.Txt_NomeResid = new System.Windows.Forms.TextBox();
@@ -46,11 +49,8 @@ namespace Controle_Acessos_Umuarama
             this.Btn_Excluir_Resid = new System.Windows.Forms.Button();
             this.Btn_ConsultResid = new System.Windows.Forms.Button();
             this.Txt_ConsultResid = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.idResidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeResidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numerResiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Resid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabResidBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet3)).BeginInit();
@@ -86,6 +86,26 @@ namespace Controle_Acessos_Umuarama
             this.Dgv_Resid.Name = "Dgv_Resid";
             this.Dgv_Resid.Size = new System.Drawing.Size(416, 258);
             this.Dgv_Resid.TabIndex = 0;
+            // 
+            // idResidDataGridViewTextBoxColumn
+            // 
+            this.idResidDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idResidDataGridViewTextBoxColumn.DataPropertyName = "Id_Resid";
+            this.idResidDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idResidDataGridViewTextBoxColumn.Name = "idResidDataGridViewTextBoxColumn";
+            this.idResidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeResidDataGridViewTextBoxColumn
+            // 
+            this.nomeResidDataGridViewTextBoxColumn.DataPropertyName = "Nome_Resid";
+            this.nomeResidDataGridViewTextBoxColumn.HeaderText = "NOME";
+            this.nomeResidDataGridViewTextBoxColumn.Name = "nomeResidDataGridViewTextBoxColumn";
+            // 
+            // numerResiDataGridViewTextBoxColumn
+            // 
+            this.numerResiDataGridViewTextBoxColumn.DataPropertyName = "Numer_Resi";
+            this.numerResiDataGridViewTextBoxColumn.HeaderText = "NÚMERO";
+            this.numerResiDataGridViewTextBoxColumn.Name = "numerResiDataGridViewTextBoxColumn";
             // 
             // tabResidBindingSource
             // 
@@ -192,16 +212,6 @@ namespace Controle_Acessos_Umuarama
             this.Txt_ConsultResid.Size = new System.Drawing.Size(34, 20);
             this.Txt_ConsultResid.TabIndex = 9;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Controle_Acessos_Umuarama.Properties.Resources.Casa;
-            this.pictureBox1.Location = new System.Drawing.Point(518, 109);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -214,25 +224,15 @@ namespace Controle_Acessos_Umuarama
             this.label3.Text = "Id";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // idResidDataGridViewTextBoxColumn
+            // pictureBox1
             // 
-            this.idResidDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.idResidDataGridViewTextBoxColumn.DataPropertyName = "Id_Resid";
-            this.idResidDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idResidDataGridViewTextBoxColumn.Name = "idResidDataGridViewTextBoxColumn";
-            this.idResidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeResidDataGridViewTextBoxColumn
-            // 
-            this.nomeResidDataGridViewTextBoxColumn.DataPropertyName = "Nome_Resid";
-            this.nomeResidDataGridViewTextBoxColumn.HeaderText = "NOME";
-            this.nomeResidDataGridViewTextBoxColumn.Name = "nomeResidDataGridViewTextBoxColumn";
-            // 
-            // numerResiDataGridViewTextBoxColumn
-            // 
-            this.numerResiDataGridViewTextBoxColumn.DataPropertyName = "Numer_Resi";
-            this.numerResiDataGridViewTextBoxColumn.HeaderText = "NÚMERO";
-            this.numerResiDataGridViewTextBoxColumn.Name = "numerResiDataGridViewTextBoxColumn";
+            this.pictureBox1.Image = global::Controle_Acessos_Umuarama.Properties.Resources.Casa;
+            this.pictureBox1.Location = new System.Drawing.Point(518, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // Cad_Residencia
             // 

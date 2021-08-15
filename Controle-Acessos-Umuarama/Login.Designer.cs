@@ -35,8 +35,8 @@ namespace Controle_Acessos_Umuarama
             this.Btn_Login = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Fechar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,16 +92,6 @@ namespace Controle_Acessos_Umuarama
             this.label2.TabIndex = 5;
             this.label2.Text = "Senha";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Controle_Acessos_Umuarama.Properties.Resources.Login_Img;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 168);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // btn_Fechar
             // 
             this.btn_Fechar.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,6 +102,16 @@ namespace Controle_Acessos_Umuarama
             this.btn_Fechar.Text = "SAIR";
             this.btn_Fechar.UseVisualStyleBackColor = true;
             this.btn_Fechar.Click += new System.EventHandler(this.btn_Fechar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Controle_Acessos_Umuarama.Properties.Resources.Login_Img;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 

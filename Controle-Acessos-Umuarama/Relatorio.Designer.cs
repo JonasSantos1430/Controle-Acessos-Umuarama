@@ -30,6 +30,7 @@ namespace Controle_Acessos_Umuarama
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Relatorio));
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
@@ -350,6 +351,7 @@ namespace Controle_Acessos_Umuarama
             this.Controls.Add(this.label1);
             this.Controls.Add(this.monthCalendar2);
             this.Controls.Add(this.monthCalendar1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Relatorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

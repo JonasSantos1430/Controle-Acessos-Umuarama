@@ -291,8 +291,8 @@ namespace Controle_Acessos_Umuarama
             this.oPÇÕESToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oPÇÕESToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.oPÇÕESToolStripMenuItem.Name = "oPÇÕESToolStripMenuItem";
-            this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.oPÇÕESToolStripMenuItem.Text = "Cadastrar Motorista";
+            this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.oPÇÕESToolStripMenuItem.Text = "Motorista";
             this.oPÇÕESToolStripMenuItem.Click += new System.EventHandler(this.oPÇÕESToolStripMenuItem_Click);
             // 
             // cadastrarResidênciaToolStripMenuItem
@@ -300,8 +300,8 @@ namespace Controle_Acessos_Umuarama
             this.cadastrarResidênciaToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastrarResidênciaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cadastrarResidênciaToolStripMenuItem.Name = "cadastrarResidênciaToolStripMenuItem";
-            this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.cadastrarResidênciaToolStripMenuItem.Text = "Cadastrar Residência";
+            this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.cadastrarResidênciaToolStripMenuItem.Text = " Residência";
             this.cadastrarResidênciaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarResidênciaToolStripMenuItem_Click);
             // 
             // registrarAcessoToolStripMenuItem
