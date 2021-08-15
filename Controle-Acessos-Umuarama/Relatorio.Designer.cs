@@ -185,7 +185,7 @@ namespace Controle_Acessos_Umuarama
             this.cb_Residencia.FormattingEnabled = true;
             this.cb_Residencia.Location = new System.Drawing.Point(6, 19);
             this.cb_Residencia.Name = "cb_Residencia";
-            this.cb_Residencia.Size = new System.Drawing.Size(121, 25);
+            this.cb_Residencia.Size = new System.Drawing.Size(188, 25);
             this.cb_Residencia.TabIndex = 0;
             this.cb_Residencia.ValueMember = "Nome_Resid";
             // 
@@ -210,7 +210,7 @@ namespace Controle_Acessos_Umuarama
             "Saída"});
             this.cb_TipoReg.Location = new System.Drawing.Point(6, 19);
             this.cb_TipoReg.Name = "cb_TipoReg";
-            this.cb_TipoReg.Size = new System.Drawing.Size(121, 25);
+            this.cb_TipoReg.Size = new System.Drawing.Size(188, 25);
             this.cb_TipoReg.TabIndex = 0;
             // 
             // vEICDataSet8

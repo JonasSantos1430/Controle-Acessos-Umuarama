@@ -64,7 +64,8 @@ namespace Controle_Acessos_Umuarama
             // 
             // Dgv_Motorista
             // 
-            this.Dgv_Motorista.AllowUserToOrderColumns = true;
+            this.Dgv_Motorista.AllowUserToAddRows = false;
+            this.Dgv_Motorista.AllowUserToDeleteRows = false;
             this.Dgv_Motorista.AutoGenerateColumns = false;
             this.Dgv_Motorista.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -91,6 +92,7 @@ namespace Controle_Acessos_Umuarama
             this.Dgv_Motorista.DefaultCellStyle = dataGridViewCellStyle2;
             this.Dgv_Motorista.Location = new System.Drawing.Point(12, 25);
             this.Dgv_Motorista.Name = "Dgv_Motorista";
+            this.Dgv_Motorista.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,12 +117,14 @@ namespace Controle_Acessos_Umuarama
             this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
             this.nomeDataGridViewTextBoxColumn.HeaderText = "NOME ";
             this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // rgDataGridViewTextBoxColumn
             // 
             this.rgDataGridViewTextBoxColumn.DataPropertyName = "Rg";
             this.rgDataGridViewTextBoxColumn.HeaderText = "RG";
             this.rgDataGridViewTextBoxColumn.Name = "rgDataGridViewTextBoxColumn";
+            this.rgDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tabMBindingSource
             // 

@@ -17,7 +17,6 @@ namespace Controle_Acessos_Umuarama
     {
         SqlConnection conexao;
         SqlCommand comando;
-        SqlDataAdapter da;
         SqlDataReader dr;
 
         string strSQL;

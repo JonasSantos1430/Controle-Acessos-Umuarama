@@ -21,9 +21,9 @@ namespace Controle_Acessos_Umuarama
         {
             if (Txt_Nome_Login.Text == "Jonas" && Txt_Senha_Login.Text=="1234")
             {           
-                        Form Form1 = new Form1();
+                        Form Registros = new Registros();
                         this.Hide();
-                        Form1.ShowDialog();
+                        Registros.ShowDialog();
                      
             }
 

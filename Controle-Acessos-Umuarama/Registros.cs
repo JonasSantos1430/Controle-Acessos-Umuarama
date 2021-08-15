@@ -15,10 +15,9 @@ namespace Controle_Acessos_Umuarama
     public partial class Registros : Form
 
     {
-        SqlConnection conexao;
-        SqlCommand     comando;
-        SqlDataAdapter da;
-        SqlDataReader dr;
+        SqlConnection   conexao;
+        SqlCommand      comando;
+        
 
         string strSQL;
 
@@ -130,6 +129,31 @@ namespace Controle_Acessos_Umuarama
 
                 Txt_Tipo_Reg.Text = "Saída";
 
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form Form1 = new Form1();
+            Form1.ShowDialog();
+        }
+
+        private void Rb_Entrada_Click(object sender, EventArgs e)
+        {
+            if(Rb_Entrada.Checked==true)
+            {
+                Txt_Tipo_Reg.Text = "Entrada";
+                
+
+            }
+            
+        }
+
+        private void Rb_Saida_Click(object sender, EventArgs e)
+        {
+            if (Rb_Saida.Checked == true)
+            {
+                Txt_Tipo_Reg.Text = "Saída";
             }
         }
     }
