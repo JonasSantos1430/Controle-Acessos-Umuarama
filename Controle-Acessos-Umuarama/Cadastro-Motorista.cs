@@ -33,41 +33,53 @@ namespace Controle_Acessos_Umuarama
 
         private void Btn_NovoM_Click(object sender, EventArgs e)
         {
-            try
+            string validaCampo = Txt_Motorista.Text.Trim();
+            
+
+            if (validaCampo == "")
             {
-                conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
+                MessageBox.Show("Campos Obrigatórios!");
+                Txt_Motorista.Focus();
+                Msk_Rg.Focus();
+            }
+            else
+            {
+                try
+                {
+                    conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                strSQL = "INSERT INTO TabM (Nome,Rg) VALUES (@Nome,@Rg)";
+                    strSQL = "INSERT INTO TabM (Nome,Rg) VALUES (@Nome,@Rg)";
 
-                comando = new SqlCommand(strSQL, conexao);
+                    comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Nome", Txt_Motorista.Text);
-                comando.Parameters.AddWithValue("Rg", Msk_Rg.Text);
-                
-
-                conexao.Open();
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Realizado!");
-                this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
+                    comando.Parameters.AddWithValue("Nome", Txt_Motorista.Text);
+                    comando.Parameters.AddWithValue("Rg", Msk_Rg.Text);
 
 
-                Txt_Motorista.Clear();
-                Msk_Rg.Clear();
-               
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro Realizado!");
+                    this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
+
+
+                    Txt_Motorista.Clear();
+                    Msk_Rg.Clear();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
 
 
 
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-
-            }
+            
         }
 
         private void Btn_EditarM_Click(object sender, EventArgs e)
@@ -149,36 +161,46 @@ namespace Controle_Acessos_Umuarama
 
         private void Btn_ExcluirM_Click(object sender, EventArgs e)
         {
-            try
+             if (DialogResult.Yes == MessageBox.Show("Confirmar a exclusão?", "Responda", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
             {
-                conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
+                try
+                {
+                    conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                strSQL = "DELETE FROM TabM WHERE Id_Motorista=@Id_Motorista";
-                comando = new SqlCommand(strSQL, conexao);
+                    strSQL = "DELETE FROM TabM WHERE Id_Motorista=@Id_Motorista";
+                    comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Id_Motorista", Txt_IdM.Text);
+                    comando.Parameters.AddWithValue("Id_Motorista", Txt_IdM.Text);
 
-                conexao.Open();
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Excluido!");
-                this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro Excluido!");
+                    this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
+                   
+                    Txt_IdM.Clear();
+                    Txt_Motorista.Clear();
+                    Msk_Rg.Clear();
 
-                Txt_Motorista.Text = "";
-                Msk_Rg.Text = "";
-                
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+                    this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
+
+                }
+
+
+
+
 
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-                this.tabMTableAdapter.Fill(this.vEICDataSet2.TabM);
-
-            }
+              
         }
     }
 }

@@ -42,39 +42,51 @@ namespace Controle_Acessos_Umuarama
 
         private void Btn_Novo_Resid_Click(object sender, EventArgs e)
         {
-            try
+            string validaCampo = Txt_NomeResid.Text.Trim();
+            if(validaCampo == "")
             {
-                conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
-
-                strSQL = "INSERT INTO TabResid (Nome_Resid,Numer_Resi) VALUES (@Nome_Resid,@Numer_Resi)";
-
-                comando = new SqlCommand(strSQL, conexao);
-
-                comando.Parameters.AddWithValue("Nome_Resid", Txt_NomeResid.Text);
-                comando.Parameters.AddWithValue("Numer_Resi", Txt_Num_Resid.Text);
-
-
-                conexao.Open();
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Realizado!");
-                this.tabResidTableAdapter.Fill(this.vEICDataSet3.TabResid);
-
-
-                Txt_NomeResid.Text = "";
-                Txt_Num_Resid.Text = "";
-
+                MessageBox.Show("Campo Obrigatório!");
+                Txt_NomeResid.Focus();
 
             }
-            catch (Exception ex)
+            else
             {
+                try
+                {
+                    conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
+                    strSQL = "INSERT INTO TabResid (Nome_Resid,Numer_Resi) VALUES (@Nome_Resid,@Numer_Resi)";
+
+                    comando = new SqlCommand(strSQL, conexao);
+
+                    comando.Parameters.AddWithValue("Nome_Resid", Txt_NomeResid.Text);
+                    comando.Parameters.AddWithValue("Numer_Resi", Txt_Num_Resid.Text);
+
+
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro Realizado!");
+                    this.tabResidTableAdapter.Fill(this.vEICDataSet3.TabResid);
+
+
+                    Txt_NomeResid.Clear();
+                    Txt_Num_Resid.Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
 
             }
+           
         }
 
         private void Btn_ConsultResid_Click(object sender, EventArgs e)
@@ -153,36 +165,43 @@ namespace Controle_Acessos_Umuarama
 
         private void Btn_Excluir_Resid_Click(object sender, EventArgs e)
         {
-            try
+            if (DialogResult.Yes == MessageBox.Show("Confirmar a exclusão?", "Responda", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
             {
-                conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
+                try
+                {
+                    conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                strSQL = "DELETE FROM TabResid WHERE Id_Resid=@Id_Resid";
-                comando = new SqlCommand(strSQL, conexao);
+                    strSQL = "DELETE FROM TabResid WHERE Id_Resid=@Id_Resid";
+                    comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Id_Resid", Txt_ConsultResid.Text);
+                    comando.Parameters.AddWithValue("Id_Resid", Txt_ConsultResid.Text);
 
-                conexao.Open();
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Excluido!");
-                this.tabResidTableAdapter.Fill(this.vEICDataSet3.TabResid);
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro Excluido!");
+                    this.tabResidTableAdapter.Fill(this.vEICDataSet3.TabResid);
 
-                Txt_ConsultResid.Text = "";
-                Txt_NomeResid.Text = "";
-                Txt_Num_Resid.Text = "";
+                    Txt_ConsultResid.Clear();
+                    Txt_NomeResid.Clear();
+                    Txt_Num_Resid.Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
+
 
 
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-
-            }
+                
 
         }
     }

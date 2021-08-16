@@ -61,6 +61,7 @@ namespace Controle_Acessos_Umuarama
             this.cadastrarResidênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cadastrarMotoristaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dadosVeiculoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cAD_VEICULODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -279,7 +280,8 @@ namespace Controle_Acessos_Umuarama
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oPÇÕESToolStripMenuItem,
             this.cadastrarResidênciaToolStripMenuItem,
-            this.registrarAcessoToolStripMenuItem});
+            this.registrarAcessoToolStripMenuItem,
+            this.cadastrarMotoristaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(819, 24);
@@ -322,6 +324,13 @@ namespace Controle_Acessos_Umuarama
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            // 
+            // cadastrarMotoristaToolStripMenuItem
+            // 
+            this.cadastrarMotoristaToolStripMenuItem.Name = "cadastrarMotoristaToolStripMenuItem";
+            this.cadastrarMotoristaToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.cadastrarMotoristaToolStripMenuItem.Text = "Cadastrar Motorista";
+            this.cadastrarMotoristaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarMotoristaToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -396,6 +405,7 @@ namespace Controle_Acessos_Umuarama
         private System.Windows.Forms.DataGridViewTextBoxColumn placaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn corDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarMotoristaToolStripMenuItem;
     }
 }
 

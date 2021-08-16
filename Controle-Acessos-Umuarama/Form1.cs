@@ -164,37 +164,44 @@ namespace Controle_Acessos_Umuarama
 
         private void Btn_ExcluirV_Click(object sender, EventArgs e)
         {
-            try
+            if(DialogResult.Yes ==MessageBox.Show("Confirmar a exclusão?","Responda",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2))
             {
-                conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
+                try
+                {
+                    conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                strSQL = "DELETE FROM TabV WHERE Id_Veiculo=@Id_Veiculo";
-                comando = new SqlCommand(strSQL, conexao);
+                    strSQL = "DELETE FROM TabV WHERE Id_Veiculo=@Id_Veiculo";
+                    comando = new SqlCommand(strSQL, conexao);
 
-                comando.Parameters.AddWithValue("Id_Veiculo",Txt_Id.Text);
+                    comando.Parameters.AddWithValue("Id_Veiculo", Txt_Id.Text);
 
-                conexao.Open();
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Excluido!");
-                
-                this.tabVTableAdapter.Fill(this.vEICDataSet.TabV);
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro Excluido!");
 
-                Txt_Id.Clear();
-                Txt_Placa.Clear();
-                Txt_Modelo.Clear();
-                Txt_Cor.Clear();
-                
+                    this.tabVTableAdapter.Fill(this.vEICDataSet.TabV);
+
+                    Txt_Id.Clear();
+                    Txt_Placa.Clear();
+                    Txt_Modelo.Clear();
+                    Txt_Cor.Clear();
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
+
+
+
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-
-            }
+           
         }
 
         private void Btn_CadMotorista_Click(object sender, EventArgs e)
@@ -228,8 +235,8 @@ namespace Controle_Acessos_Umuarama
 
         private void oPÇÕESToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form Cadastro_Motorista = new Cadastro_Motorista();
-            Cadastro_Motorista.ShowDialog();
+           // Form Cadastro_Motorista = new Cadastro_Motorista();
+           // Cadastro_Motorista.ShowDialog();
         }
 
         private void cadastrarResidênciaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -242,6 +249,12 @@ namespace Controle_Acessos_Umuarama
         {
             Form Registros = new Registros();
             Registros.ShowDialog();
+        }
+
+        private void cadastrarMotoristaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form Cadastro_Motorista = new Cadastro_Motorista();
+            Cadastro_Motorista.ShowDialog();
         }
     }
 }
