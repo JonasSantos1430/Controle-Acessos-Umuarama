@@ -172,7 +172,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_NovoM.Location = new System.Drawing.Point(419, 265);
             this.Btn_NovoM.Name = "Btn_NovoM";
             this.Btn_NovoM.Size = new System.Drawing.Size(75, 23);
-            this.Btn_NovoM.TabIndex = 5;
+            this.Btn_NovoM.TabIndex = 3;
             this.Btn_NovoM.Text = "Novo";
             this.Btn_NovoM.UseVisualStyleBackColor = true;
             this.Btn_NovoM.Click += new System.EventHandler(this.Btn_NovoM_Click);
@@ -183,7 +183,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_EditarM.Location = new System.Drawing.Point(500, 265);
             this.Btn_EditarM.Name = "Btn_EditarM";
             this.Btn_EditarM.Size = new System.Drawing.Size(75, 23);
-            this.Btn_EditarM.TabIndex = 6;
+            this.Btn_EditarM.TabIndex = 4;
             this.Btn_EditarM.Text = "Editar";
             this.Btn_EditarM.UseVisualStyleBackColor = true;
             this.Btn_EditarM.Click += new System.EventHandler(this.Btn_EditarM_Click);
@@ -194,7 +194,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_ExcluirM.Location = new System.Drawing.Point(581, 265);
             this.Btn_ExcluirM.Name = "Btn_ExcluirM";
             this.Btn_ExcluirM.Size = new System.Drawing.Size(75, 23);
-            this.Btn_ExcluirM.TabIndex = 7;
+            this.Btn_ExcluirM.TabIndex = 5;
             this.Btn_ExcluirM.Text = "Excluir";
             this.Btn_ExcluirM.UseVisualStyleBackColor = true;
             this.Btn_ExcluirM.Click += new System.EventHandler(this.Btn_ExcluirM_Click);
@@ -205,7 +205,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_ConsultarM.Location = new System.Drawing.Point(659, 265);
             this.Btn_ConsultarM.Name = "Btn_ConsultarM";
             this.Btn_ConsultarM.Size = new System.Drawing.Size(75, 23);
-            this.Btn_ConsultarM.TabIndex = 8;
+            this.Btn_ConsultarM.TabIndex = 6;
             this.Btn_ConsultarM.Text = "Consultar";
             this.Btn_ConsultarM.UseVisualStyleBackColor = true;
             this.Btn_ConsultarM.Click += new System.EventHandler(this.Btn_ConsultarM_Click);
@@ -215,7 +215,7 @@ namespace Controle_Acessos_Umuarama
             this.Txt_IdM.Location = new System.Drawing.Point(740, 268);
             this.Txt_IdM.Name = "Txt_IdM";
             this.Txt_IdM.Size = new System.Drawing.Size(34, 20);
-            this.Txt_IdM.TabIndex = 9;
+            this.Txt_IdM.TabIndex = 7;
             // 
             // label3
             // 
@@ -248,7 +248,7 @@ namespace Controle_Acessos_Umuarama
             this.Msk_Rg.Mask = "00,000,000-00";
             this.Msk_Rg.Name = "Msk_Rg";
             this.Msk_Rg.Size = new System.Drawing.Size(110, 20);
-            this.Msk_Rg.TabIndex = 11;
+            this.Msk_Rg.TabIndex = 2;
             // 
             // pictureBox1
             // 

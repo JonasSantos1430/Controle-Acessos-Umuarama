@@ -80,7 +80,7 @@ namespace Controle_Acessos_Umuarama
             this.CB_Placa.Location = new System.Drawing.Point(32, 74);
             this.CB_Placa.Name = "CB_Placa";
             this.CB_Placa.Size = new System.Drawing.Size(121, 23);
-            this.CB_Placa.TabIndex = 11;
+            this.CB_Placa.TabIndex = 1;
             this.CB_Placa.ValueMember = "Placa";
             // 
             // tabVBindingSource
@@ -106,7 +106,7 @@ namespace Controle_Acessos_Umuarama
             this.CB_Modelo.Location = new System.Drawing.Point(159, 74);
             this.CB_Modelo.Name = "CB_Modelo";
             this.CB_Modelo.Size = new System.Drawing.Size(121, 23);
-            this.CB_Modelo.TabIndex = 12;
+            this.CB_Modelo.TabIndex = 2;
             this.CB_Modelo.ValueMember = "Modelo";
             // 
             // CB_Cor
@@ -118,7 +118,7 @@ namespace Controle_Acessos_Umuarama
             this.CB_Cor.Location = new System.Drawing.Point(286, 74);
             this.CB_Cor.Name = "CB_Cor";
             this.CB_Cor.Size = new System.Drawing.Size(121, 23);
-            this.CB_Cor.TabIndex = 13;
+            this.CB_Cor.TabIndex = 3;
             this.CB_Cor.ValueMember = "Cor";
             // 
             // CB_Motorista
@@ -130,7 +130,7 @@ namespace Controle_Acessos_Umuarama
             this.CB_Motorista.Location = new System.Drawing.Point(413, 74);
             this.CB_Motorista.Name = "CB_Motorista";
             this.CB_Motorista.Size = new System.Drawing.Size(121, 23);
-            this.CB_Motorista.TabIndex = 14;
+            this.CB_Motorista.TabIndex = 4;
             this.CB_Motorista.ValueMember = "Nome";
             // 
             // tabMBindingSource
@@ -156,7 +156,7 @@ namespace Controle_Acessos_Umuarama
             this.CB_RG.Location = new System.Drawing.Point(540, 74);
             this.CB_RG.Name = "CB_RG";
             this.CB_RG.Size = new System.Drawing.Size(121, 23);
-            this.CB_RG.TabIndex = 15;
+            this.CB_RG.TabIndex = 5;
             this.CB_RG.ValueMember = "Rg";
             // 
             // CB_Resid
@@ -168,7 +168,7 @@ namespace Controle_Acessos_Umuarama
             this.CB_Resid.Location = new System.Drawing.Point(667, 74);
             this.CB_Resid.Name = "CB_Resid";
             this.CB_Resid.Size = new System.Drawing.Size(121, 23);
-            this.CB_Resid.TabIndex = 16;
+            this.CB_Resid.TabIndex = 6;
             this.CB_Resid.ValueMember = "Nome_Resid";
             // 
             // tabResidBindingSource
@@ -193,7 +193,7 @@ namespace Controle_Acessos_Umuarama
             this.Rb_Entrada.Location = new System.Drawing.Point(341, 117);
             this.Rb_Entrada.Name = "Rb_Entrada";
             this.Rb_Entrada.Size = new System.Drawing.Size(72, 21);
-            this.Rb_Entrada.TabIndex = 17;
+            this.Rb_Entrada.TabIndex = 7;
             this.Rb_Entrada.TabStop = true;
             this.Rb_Entrada.Text = "ENTRADA";
             this.Rb_Entrada.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@ namespace Controle_Acessos_Umuarama
             this.Rb_Saida.Location = new System.Drawing.Point(448, 117);
             this.Rb_Saida.Name = "Rb_Saida";
             this.Rb_Saida.Size = new System.Drawing.Size(58, 21);
-            this.Rb_Saida.TabIndex = 18;
+            this.Rb_Saida.TabIndex = 8;
             this.Rb_Saida.TabStop = true;
             this.Rb_Saida.Text = "SAÍDA";
             this.Rb_Saida.UseVisualStyleBackColor = true;
@@ -219,7 +219,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_SalvarReg.Location = new System.Drawing.Point(336, 190);
             this.Btn_SalvarReg.Name = "Btn_SalvarReg";
             this.Btn_SalvarReg.Size = new System.Drawing.Size(96, 35);
-            this.Btn_SalvarReg.TabIndex = 20;
+            this.Btn_SalvarReg.TabIndex = 10;
             this.Btn_SalvarReg.Text = "SALVAR";
             this.Btn_SalvarReg.UseVisualStyleBackColor = true;
             this.Btn_SalvarReg.Click += new System.EventHandler(this.Btn_SalvarReg_Click);
@@ -230,7 +230,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_Fechar.Location = new System.Drawing.Point(444, 190);
             this.Btn_Fechar.Name = "Btn_Fechar";
             this.Btn_Fechar.Size = new System.Drawing.Size(90, 35);
-            this.Btn_Fechar.TabIndex = 21;
+            this.Btn_Fechar.TabIndex = 11;
             this.Btn_Fechar.Text = "SAIR";
             this.Btn_Fechar.UseVisualStyleBackColor = true;
             this.Btn_Fechar.Click += new System.EventHandler(this.Btn_Fechar_Click);
@@ -324,7 +324,7 @@ namespace Controle_Acessos_Umuarama
             this.Txt_Tipo_Reg.Location = new System.Drawing.Point(381, 140);
             this.Txt_Tipo_Reg.Name = "Txt_Tipo_Reg";
             this.Txt_Tipo_Reg.Size = new System.Drawing.Size(100, 23);
-            this.Txt_Tipo_Reg.TabIndex = 31;
+            this.Txt_Tipo_Reg.TabIndex = 9;
             this.Txt_Tipo_Reg.TextChanged += new System.EventHandler(this.Txt_Tipo_Reg_TextChanged);
             // 
             // button1
@@ -333,7 +333,7 @@ namespace Controle_Acessos_Umuarama
             this.button1.Location = new System.Drawing.Point(649, 240);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 35);
-            this.button1.TabIndex = 33;
+            this.button1.TabIndex = 12;
             this.button1.Text = " RELATÓRIOS";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -360,7 +360,7 @@ namespace Controle_Acessos_Umuarama
             this.button2.Location = new System.Drawing.Point(12, 238);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 35);
-            this.button2.TabIndex = 36;
+            this.button2.TabIndex = 13;
             this.button2.Text = "REALIZAR   CADASTROS";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);

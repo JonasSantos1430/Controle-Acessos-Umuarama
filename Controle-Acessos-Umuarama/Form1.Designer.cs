@@ -58,10 +58,10 @@ namespace Controle_Acessos_Umuarama
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.oPÇÕESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarResidênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cadastrarResidênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarMotoristaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dadosVeiculoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cAD_VEICULODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -109,21 +109,21 @@ namespace Controle_Acessos_Umuarama
             this.Txt_Placa.Location = new System.Drawing.Point(529, 26);
             this.Txt_Placa.Name = "Txt_Placa";
             this.Txt_Placa.Size = new System.Drawing.Size(127, 20);
-            this.Txt_Placa.TabIndex = 3;
+            this.Txt_Placa.TabIndex = 1;
             // 
             // Txt_Modelo
             // 
             this.Txt_Modelo.Location = new System.Drawing.Point(529, 52);
             this.Txt_Modelo.Name = "Txt_Modelo";
             this.Txt_Modelo.Size = new System.Drawing.Size(127, 20);
-            this.Txt_Modelo.TabIndex = 4;
+            this.Txt_Modelo.TabIndex = 2;
             // 
             // Txt_Cor
             // 
             this.Txt_Cor.Location = new System.Drawing.Point(529, 78);
             this.Txt_Cor.Name = "Txt_Cor";
             this.Txt_Cor.Size = new System.Drawing.Size(127, 20);
-            this.Txt_Cor.TabIndex = 5;
+            this.Txt_Cor.TabIndex = 3;
             // 
             // dadosVeiculoBindingSource
             // 
@@ -141,7 +141,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_NovoV.Location = new System.Drawing.Point(448, 233);
             this.Btn_NovoV.Name = "Btn_NovoV";
             this.Btn_NovoV.Size = new System.Drawing.Size(75, 23);
-            this.Btn_NovoV.TabIndex = 7;
+            this.Btn_NovoV.TabIndex = 4;
             this.Btn_NovoV.Text = "Novo";
             this.Btn_NovoV.UseVisualStyleBackColor = true;
             this.Btn_NovoV.Click += new System.EventHandler(this.Btn_NovoV_Click);
@@ -152,7 +152,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_EditarV.Location = new System.Drawing.Point(529, 233);
             this.Btn_EditarV.Name = "Btn_EditarV";
             this.Btn_EditarV.Size = new System.Drawing.Size(75, 23);
-            this.Btn_EditarV.TabIndex = 8;
+            this.Btn_EditarV.TabIndex = 5;
             this.Btn_EditarV.Text = "Editar";
             this.Btn_EditarV.UseVisualStyleBackColor = true;
             this.Btn_EditarV.Click += new System.EventHandler(this.Btn_EditarV_Click);
@@ -163,7 +163,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_ConsultV.Location = new System.Drawing.Point(691, 233);
             this.Btn_ConsultV.Name = "Btn_ConsultV";
             this.Btn_ConsultV.Size = new System.Drawing.Size(75, 23);
-            this.Btn_ConsultV.TabIndex = 9;
+            this.Btn_ConsultV.TabIndex = 7;
             this.Btn_ConsultV.Text = "Consultar";
             this.Btn_ConsultV.UseVisualStyleBackColor = true;
             this.Btn_ConsultV.Click += new System.EventHandler(this.Btn_ConsultV_Click);
@@ -174,7 +174,7 @@ namespace Controle_Acessos_Umuarama
             this.Btn_ExcluirV.Location = new System.Drawing.Point(610, 233);
             this.Btn_ExcluirV.Name = "Btn_ExcluirV";
             this.Btn_ExcluirV.Size = new System.Drawing.Size(75, 23);
-            this.Btn_ExcluirV.TabIndex = 10;
+            this.Btn_ExcluirV.TabIndex = 6;
             this.Btn_ExcluirV.Text = "Excluir";
             this.Btn_ExcluirV.UseVisualStyleBackColor = true;
             this.Btn_ExcluirV.Click += new System.EventHandler(this.Btn_ExcluirV_Click);
@@ -260,7 +260,7 @@ namespace Controle_Acessos_Umuarama
             this.Txt_Id.Location = new System.Drawing.Point(772, 236);
             this.Txt_Id.Name = "Txt_Id";
             this.Txt_Id.Size = new System.Drawing.Size(28, 20);
-            this.Txt_Id.TabIndex = 12;
+            this.Txt_Id.TabIndex = 8;
             // 
             // label4
             // 
@@ -279,12 +279,12 @@ namespace Controle_Acessos_Umuarama
             this.menuStrip1.BackColor = System.Drawing.Color.DarkRed;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oPÇÕESToolStripMenuItem,
-            this.cadastrarResidênciaToolStripMenuItem,
             this.registrarAcessoToolStripMenuItem,
+            this.cadastrarResidênciaToolStripMenuItem,
             this.cadastrarMotoristaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(819, 25);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -293,27 +293,35 @@ namespace Controle_Acessos_Umuarama
             this.oPÇÕESToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oPÇÕESToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.oPÇÕESToolStripMenuItem.Name = "oPÇÕESToolStripMenuItem";
-            this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.oPÇÕESToolStripMenuItem.Text = "Motorista";
+            this.oPÇÕESToolStripMenuItem.Size = new System.Drawing.Size(12, 21);
             this.oPÇÕESToolStripMenuItem.Click += new System.EventHandler(this.oPÇÕESToolStripMenuItem_Click);
-            // 
-            // cadastrarResidênciaToolStripMenuItem
-            // 
-            this.cadastrarResidênciaToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastrarResidênciaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cadastrarResidênciaToolStripMenuItem.Name = "cadastrarResidênciaToolStripMenuItem";
-            this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.cadastrarResidênciaToolStripMenuItem.Text = " Residência";
-            this.cadastrarResidênciaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarResidênciaToolStripMenuItem_Click);
             // 
             // registrarAcessoToolStripMenuItem
             // 
-            this.registrarAcessoToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registrarAcessoToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registrarAcessoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.registrarAcessoToolStripMenuItem.Name = "registrarAcessoToolStripMenuItem";
-            this.registrarAcessoToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.registrarAcessoToolStripMenuItem.Size = new System.Drawing.Size(113, 21);
             this.registrarAcessoToolStripMenuItem.Text = "Registrar Acesso";
             this.registrarAcessoToolStripMenuItem.Click += new System.EventHandler(this.registrarAcessoToolStripMenuItem_Click);
+            // 
+            // cadastrarResidênciaToolStripMenuItem
+            // 
+            this.cadastrarResidênciaToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastrarResidênciaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cadastrarResidênciaToolStripMenuItem.Name = "cadastrarResidênciaToolStripMenuItem";
+            this.cadastrarResidênciaToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
+            this.cadastrarResidênciaToolStripMenuItem.Text = " Residência";
+            this.cadastrarResidênciaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarResidênciaToolStripMenuItem_Click);
+            // 
+            // cadastrarMotoristaToolStripMenuItem
+            // 
+            this.cadastrarMotoristaToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastrarMotoristaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.cadastrarMotoristaToolStripMenuItem.Name = "cadastrarMotoristaToolStripMenuItem";
+            this.cadastrarMotoristaToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
+            this.cadastrarMotoristaToolStripMenuItem.Text = " Motorista";
+            this.cadastrarMotoristaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarMotoristaToolStripMenuItem_Click_1);
             // 
             // pictureBox1
             // 
@@ -324,13 +332,6 @@ namespace Controle_Acessos_Umuarama
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            // 
-            // cadastrarMotoristaToolStripMenuItem
-            // 
-            this.cadastrarMotoristaToolStripMenuItem.Name = "cadastrarMotoristaToolStripMenuItem";
-            this.cadastrarMotoristaToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
-            this.cadastrarMotoristaToolStripMenuItem.Text = "Cadastrar Motorista";
-            this.cadastrarMotoristaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarMotoristaToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -359,7 +360,7 @@ namespace Controle_Acessos_Umuarama
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastrar Veículo";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dadosVeiculoBindingSource)).EndInit();
