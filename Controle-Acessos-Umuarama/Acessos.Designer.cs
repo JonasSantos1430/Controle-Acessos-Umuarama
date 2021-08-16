@@ -47,6 +47,7 @@ namespace Controle_Acessos_Umuarama
             this.vEICDataSet7 = new Controle_Acessos_Umuarama.VEICDataSet7();
             this.acessosTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet7TableAdapters.AcessosTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acessosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet7)).BeginInit();
@@ -57,7 +58,7 @@ namespace Controle_Acessos_Umuarama
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkRed;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,7 +173,19 @@ namespace Controle_Acessos_Umuarama
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(298, 426);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar   Placa";
             // 
             // Acessos
             // 
@@ -180,6 +193,7 @@ namespace Controle_Acessos_Umuarama
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1042, 492);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -211,5 +225,6 @@ namespace Controle_Acessos_Umuarama
         private System.Windows.Forms.DataGridViewTextBoxColumn horárioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn casaDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

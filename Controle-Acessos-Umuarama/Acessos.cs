@@ -61,6 +61,7 @@ namespace Controle_Acessos_Umuarama
 
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
+            this.acessosTableAdapter.Fill(this.vEICDataSet7.Acessos);
             try
             {
                 conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
@@ -89,6 +90,11 @@ namespace Controle_Acessos_Umuarama
                 conexao.Close();
 
             }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
