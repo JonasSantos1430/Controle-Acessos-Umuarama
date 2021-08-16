@@ -49,59 +49,66 @@ namespace Controle_Acessos_Umuarama
 
         private void Btn_SalvarReg_Click(object sender, EventArgs e)
         {
-
-            try
+            string validaCampo = Txt_Tipo_Reg.Text.Trim();
+            if (validaCampo == "")
             {
-                conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
+                MessageBox.Show("Campo Obrigatório!");
+                Txt_Tipo_Reg.Focus();
 
-                strSQL = "INSERT INTO Acessos (Data,Placa,Modelo,Cor,Motorista,RG,Tipo_Registro,Horário,Casa) VALUES (@Data,@Placa,@Modelo,@Cor,@Motorista,@RG,@Tipo_Registro,@Horário,@Casa)";
+            }
+            else
+            {
+                try
+                {
+                    conexao = new SqlConnection("Data Source =.\\SQLEXPRESS; Initial Catalog = VEIC; Integrated Security = True");
 
-                comando = new SqlCommand(strSQL, conexao);
+                    strSQL = "INSERT INTO Acessos (Data,Placa,Modelo,Cor,Motorista,RG,Tipo_Registro,Horário,Casa) VALUES (@Data,@Placa,@Modelo,@Cor,@Motorista,@RG,@Tipo_Registro,@Horário,@Casa)";
 
-                comando.Parameters.AddWithValue("Data", Txt_Data.Text);
-                comando.Parameters.AddWithValue("Placa", CB_Placa.Text);
-                comando.Parameters.AddWithValue("Modelo", CB_Modelo.Text);
-                comando.Parameters.AddWithValue("Cor", CB_Cor.Text);
-                comando.Parameters.AddWithValue("Motorista",CB_Motorista.Text);
-                comando.Parameters.AddWithValue("RG", CB_RG.Text);
-                comando.Parameters.AddWithValue("Tipo_Registro",Txt_Tipo_Reg.Text);
-                comando.Parameters.AddWithValue("Horário", DateTime.Now);
-                comando.Parameters.AddWithValue("Casa", CB_Resid.Text);
+                    comando = new SqlCommand(strSQL, conexao);
+
+                    comando.Parameters.AddWithValue("Data", Txt_Data.Text);
+                    comando.Parameters.AddWithValue("Placa", CB_Placa.Text);
+                    comando.Parameters.AddWithValue("Modelo", CB_Modelo.Text);
+                    comando.Parameters.AddWithValue("Cor", CB_Cor.Text);
+                    comando.Parameters.AddWithValue("Motorista", CB_Motorista.Text);
+                    comando.Parameters.AddWithValue("RG", CB_RG.Text);
+                    comando.Parameters.AddWithValue("Tipo_Registro", Txt_Tipo_Reg.Text);
+                    comando.Parameters.AddWithValue("Horário", DateTime.Now);
+                    comando.Parameters.AddWithValue("Casa", CB_Resid.Text);
 
 
 
 
-                conexao.Open();
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Realizado!");
-                
-               // Txt_Placa.Text = "";
-                //Txt_Modelo.Text = "";
-               // Txt_Cor.Text = "";
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro Realizado!");
 
+                    // Txt_Placa.Text = "";
+                    //Txt_Modelo.Text = "";
+                    // Txt_Cor.Text = "";
+
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+
+                }
 
 
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-
-
-
-            }
-
-
+           
             }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Form Acessos = new Acessos();
-           // Acessos.ShowDialog();
+           
             Form Relatorio = new Relatorio();
             Relatorio.ShowDialog();
 
