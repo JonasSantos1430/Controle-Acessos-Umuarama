@@ -325,6 +325,7 @@ namespace Controle_Acessos_Umuarama
             this.Txt_Tipo_Reg.Name = "Txt_Tipo_Reg";
             this.Txt_Tipo_Reg.Size = new System.Drawing.Size(100, 23);
             this.Txt_Tipo_Reg.TabIndex = 9;
+            this.Txt_Tipo_Reg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Txt_Tipo_Reg.TextChanged += new System.EventHandler(this.Txt_Tipo_Reg_TextChanged);
             // 
             // button1

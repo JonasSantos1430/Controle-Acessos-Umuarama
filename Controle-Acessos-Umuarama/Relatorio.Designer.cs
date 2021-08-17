@@ -35,49 +35,49 @@ namespace Controle_Acessos_Umuarama
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cb_Placa = new System.Windows.Forms.ComboBox();
-            this.cb_Modelo = new System.Windows.Forms.ComboBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.cb_Cor = new System.Windows.Forms.ComboBox();
+            this.tabVBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.vEICDataSet12 = new Controle_Acessos_Umuarama.VEICDataSet12();
+            this.cb_Modelo = new System.Windows.Forms.ComboBox();
+            this.tabVBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.vEICDataSet11 = new Controle_Acessos_Umuarama.VEICDataSet11();
+            this.cb_Placa = new System.Windows.Forms.ComboBox();
+            this.tabVBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vEICDataSet10 = new Controle_Acessos_Umuarama.VEICDataSet10();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cb_Residencia = new System.Windows.Forms.ComboBox();
+            this.tabResidBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vEICDataSet9 = new Controle_Acessos_Umuarama.VEICDataSet9();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cb_TipoReg = new System.Windows.Forms.ComboBox();
             this.vEICDataSet8 = new Controle_Acessos_Umuarama.VEICDataSet8();
             this.acessosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.acessosTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet8TableAdapters.AcessosTableAdapter();
-            this.vEICDataSet9 = new Controle_Acessos_Umuarama.VEICDataSet9();
-            this.tabResidBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabResidTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet9TableAdapters.TabResidTableAdapter();
-            this.vEICDataSet10 = new Controle_Acessos_Umuarama.VEICDataSet10();
-            this.tabVBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabVTableAdapter = new Controle_Acessos_Umuarama.VEICDataSet10TableAdapters.TabVTableAdapter();
-            this.vEICDataSet11 = new Controle_Acessos_Umuarama.VEICDataSet11();
-            this.tabVBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabVTableAdapter1 = new Controle_Acessos_Umuarama.VEICDataSet11TableAdapters.TabVTableAdapter();
-            this.vEICDataSet12 = new Controle_Acessos_Umuarama.VEICDataSet12();
-            this.tabVBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tabVTableAdapter2 = new Controle_Acessos_Umuarama.VEICDataSet12TableAdapters.TabVTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_Relatorio = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet10)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabResidBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet9)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acessosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabResidBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +93,7 @@ namespace Controle_Acessos_Umuarama
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(18, 23);
+            this.label1.Location = new System.Drawing.Point(79, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 2;
@@ -104,7 +104,7 @@ namespace Controle_Acessos_Umuarama
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(284, 23);
+            this.label2.Location = new System.Drawing.Point(85, -3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 3;
@@ -127,17 +127,58 @@ namespace Controle_Acessos_Umuarama
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados Veiculo";
             // 
-            // cb_Placa
+            // checkBox3
             // 
-            this.cb_Placa.DataSource = this.tabVBindingSource;
-            this.cb_Placa.DisplayMember = "Placa";
-            this.cb_Placa.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Placa.FormattingEnabled = true;
-            this.cb_Placa.Location = new System.Drawing.Point(6, 28);
-            this.cb_Placa.Name = "cb_Placa";
-            this.cb_Placa.Size = new System.Drawing.Size(121, 25);
-            this.cb_Placa.TabIndex = 0;
-            this.cb_Placa.ValueMember = "Placa";
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(179, 102);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 5;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Click += new System.EventHandler(this.checkBox3_Click);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(179, 70);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Click += new System.EventHandler(this.checkBox2_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(179, 39);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.Click += new System.EventHandler(this.checkBox1_Click);
+            // 
+            // cb_Cor
+            // 
+            this.cb_Cor.DataSource = this.tabVBindingSource2;
+            this.cb_Cor.DisplayMember = "Cor";
+            this.cb_Cor.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Cor.FormattingEnabled = true;
+            this.cb_Cor.Location = new System.Drawing.Point(6, 91);
+            this.cb_Cor.Name = "cb_Cor";
+            this.cb_Cor.Size = new System.Drawing.Size(121, 25);
+            this.cb_Cor.TabIndex = 2;
+            this.cb_Cor.ValueMember = "Cor";
+            // 
+            // tabVBindingSource2
+            // 
+            this.tabVBindingSource2.DataMember = "TabV";
+            this.tabVBindingSource2.DataSource = this.vEICDataSet12;
+            // 
+            // vEICDataSet12
+            // 
+            this.vEICDataSet12.DataSetName = "VEICDataSet12";
+            this.vEICDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cb_Modelo
             // 
@@ -151,17 +192,37 @@ namespace Controle_Acessos_Umuarama
             this.cb_Modelo.TabIndex = 1;
             this.cb_Modelo.ValueMember = "Modelo";
             // 
-            // cb_Cor
+            // tabVBindingSource1
             // 
-            this.cb_Cor.DataSource = this.tabVBindingSource2;
-            this.cb_Cor.DisplayMember = "Cor";
-            this.cb_Cor.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Cor.FormattingEnabled = true;
-            this.cb_Cor.Location = new System.Drawing.Point(6, 91);
-            this.cb_Cor.Name = "cb_Cor";
-            this.cb_Cor.Size = new System.Drawing.Size(121, 25);
-            this.cb_Cor.TabIndex = 2;
-            this.cb_Cor.ValueMember = "Cor";
+            this.tabVBindingSource1.DataMember = "TabV";
+            this.tabVBindingSource1.DataSource = this.vEICDataSet11;
+            // 
+            // vEICDataSet11
+            // 
+            this.vEICDataSet11.DataSetName = "VEICDataSet11";
+            this.vEICDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cb_Placa
+            // 
+            this.cb_Placa.DataSource = this.tabVBindingSource;
+            this.cb_Placa.DisplayMember = "Placa";
+            this.cb_Placa.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Placa.FormattingEnabled = true;
+            this.cb_Placa.Location = new System.Drawing.Point(6, 28);
+            this.cb_Placa.Name = "cb_Placa";
+            this.cb_Placa.Size = new System.Drawing.Size(121, 25);
+            this.cb_Placa.TabIndex = 0;
+            this.cb_Placa.ValueMember = "Placa";
+            // 
+            // tabVBindingSource
+            // 
+            this.tabVBindingSource.DataMember = "TabV";
+            this.tabVBindingSource.DataSource = this.vEICDataSet10;
+            // 
+            // vEICDataSet10
+            // 
+            this.vEICDataSet10.DataSetName = "VEICDataSet10";
+            this.vEICDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox3
             // 
@@ -186,6 +247,16 @@ namespace Controle_Acessos_Umuarama
             this.cb_Residencia.Size = new System.Drawing.Size(188, 25);
             this.cb_Residencia.TabIndex = 0;
             this.cb_Residencia.ValueMember = "Nome_Resid";
+            // 
+            // tabResidBindingSource
+            // 
+            this.tabResidBindingSource.DataMember = "TabResid";
+            this.tabResidBindingSource.DataSource = this.vEICDataSet9;
+            // 
+            // vEICDataSet9
+            // 
+            this.vEICDataSet9.DataSetName = "VEICDataSet9";
+            this.vEICDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox4
             // 
@@ -225,57 +296,17 @@ namespace Controle_Acessos_Umuarama
             // 
             this.acessosTableAdapter.ClearBeforeFill = true;
             // 
-            // vEICDataSet9
-            // 
-            this.vEICDataSet9.DataSetName = "VEICDataSet9";
-            this.vEICDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabResidBindingSource
-            // 
-            this.tabResidBindingSource.DataMember = "TabResid";
-            this.tabResidBindingSource.DataSource = this.vEICDataSet9;
-            // 
             // tabResidTableAdapter
             // 
             this.tabResidTableAdapter.ClearBeforeFill = true;
-            // 
-            // vEICDataSet10
-            // 
-            this.vEICDataSet10.DataSetName = "VEICDataSet10";
-            this.vEICDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabVBindingSource
-            // 
-            this.tabVBindingSource.DataMember = "TabV";
-            this.tabVBindingSource.DataSource = this.vEICDataSet10;
             // 
             // tabVTableAdapter
             // 
             this.tabVTableAdapter.ClearBeforeFill = true;
             // 
-            // vEICDataSet11
-            // 
-            this.vEICDataSet11.DataSetName = "VEICDataSet11";
-            this.vEICDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabVBindingSource1
-            // 
-            this.tabVBindingSource1.DataMember = "TabV";
-            this.tabVBindingSource1.DataSource = this.vEICDataSet11;
-            // 
             // tabVTableAdapter1
             // 
             this.tabVTableAdapter1.ClearBeforeFill = true;
-            // 
-            // vEICDataSet12
-            // 
-            this.vEICDataSet12.DataSetName = "VEICDataSet12";
-            this.vEICDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabVBindingSource2
-            // 
-            this.tabVBindingSource2.DataMember = "TabV";
-            this.tabVBindingSource2.DataSource = this.vEICDataSet12;
             // 
             // tabVTableAdapter2
             // 
@@ -303,40 +334,10 @@ namespace Controle_Acessos_Umuarama
             this.btn_Relatorio.UseVisualStyleBackColor = true;
             this.btn_Relatorio.Click += new System.EventHandler(this.btn_Relatorio_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(179, 39);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            this.checkBox1.Click += new System.EventHandler(this.checkBox1_Click);
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(179, 70);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.Click += new System.EventHandler(this.checkBox2_Click);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(179, 102);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.Click += new System.EventHandler(this.checkBox3_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.monthCalendar1);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 39);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(239, 202);
@@ -352,6 +353,7 @@ namespace Controle_Acessos_Umuarama
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.monthCalendar2);
+            this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Location = new System.Drawing.Point(271, 39);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(241, 202);
@@ -371,8 +373,6 @@ namespace Controle_Acessos_Umuarama
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Relatorio";
@@ -381,22 +381,23 @@ namespace Controle_Acessos_Umuarama
             this.Load += new System.EventHandler(this.Relatorio_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet10)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabResidBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet9)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acessosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabResidBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vEICDataSet12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabVBindingSource2)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

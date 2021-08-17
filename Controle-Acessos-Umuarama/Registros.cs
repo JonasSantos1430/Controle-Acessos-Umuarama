@@ -77,16 +77,11 @@ namespace Controle_Acessos_Umuarama
                     comando.Parameters.AddWithValue("Casa", CB_Resid.Text);
 
 
-
-
                     conexao.Open();
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Cadastro Realizado!");
 
-                    // Txt_Placa.Text = "";
-                    //Txt_Modelo.Text = "";
-                    // Txt_Cor.Text = "";
-
+                    Txt_Tipo_Reg.Clear();
 
 
                 }
